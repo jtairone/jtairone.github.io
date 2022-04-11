@@ -9,5 +9,4 @@ function idade(mes, ano) {
 }
 
 idadeatual = idade(6, 1983);
-console.log(idadeatual);
 document.getElementById("idade").innerHTML = idadeatual;
