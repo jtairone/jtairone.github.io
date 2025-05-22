@@ -8,5 +8,17 @@ function idade(mes, ano) {
     }
 }
 
-idadeatual = idade(6, 1983);
-document.getElementById("idade").innerHTML = idadeatual;
+const idadeatual = idade(6, 1983);
+const elemento = document.getElementById("idade");
+
+if (elemento) {
+        // Captura todo o conteúdo HTML original
+        const conteudoOriginal = elemento.innerHTML;
+        
+        // Substitui apenas a parte numérica usando regex
+        elemento.innerHTML = conteudoOriginal.replace(
+            /(<strong>Idade:<\/strong>\s*)\d+/, 
+            `$1${idadeatual}` // Substitua 1986 pelo seu ano de nascimento
+        );
+    }
+
