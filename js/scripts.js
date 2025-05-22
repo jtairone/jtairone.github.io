@@ -6,14 +6,14 @@
         });
         
         // Back to top button
-        window.addEventListener('scroll', function() {
+        /* window.addEventListener('scroll', function() {
             var backToTop = document.querySelector('.back-to-top');
             if (window.pageYOffset > 300) {
                 backToTop.style.display = 'block';
             } else {
                 backToTop.style.display = 'none';
             }
-        });
+        }); */
         
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
